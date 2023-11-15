@@ -1,5 +1,9 @@
-class Graph:
+import networkx as nx
+
+class Graph(nx.Graph):
+    
     def __init__(self, start=None, values = None, directed=False):
+        super().__init__(start)
         self._adjlist = {}
         if values is None:
             values = {}
