@@ -10,4 +10,4 @@ def readTramNetwork(tramfile=TRAM_FILE):
         TramNetwork = json.load(file)
         return TramNetwork
     
-print(readTramNetwork(TRAM_FILE))
+print(readTramNetwork())

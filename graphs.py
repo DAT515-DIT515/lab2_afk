@@ -9,9 +9,12 @@ class Graph(nx.Graph):
             values = {}
         self._valuelist = values
         self._isdirected = directed
+        
         # plus some code for building a graph from a ’start’ object
         # such as a list of edges
         # here are some of the public methods to implement
+        
+        
     def vertices(self):
         pass
     
