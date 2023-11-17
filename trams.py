@@ -11,3 +11,21 @@ def readTramNetwork(tramfile=TRAM_FILE):
         return TramNetwork
     
 print(readTramNetwork())
+
+
+
+
+class TramNetwork:
+    
+    def __init__(start):
+        pass
+    
+class TramLine:
+    
+    def __init__(num,stops):
+        pass
+
+class TramStop:
+    
+    def __init__(name, lines, lan, lon):
+        pass

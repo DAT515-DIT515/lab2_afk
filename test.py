@@ -13,7 +13,7 @@ def readTramNetwork(tramfile=TRAM_FILE):
 Network = (readTramNetwork())
 #print(len(Network["stops"]))
 G = nx.Graph(Network["times"])
-dot = gv.Graph( engine='dot')
+dot = gv.Graph(engine='dot')
 for v in G.nodes():
         print(v)
         dot.node(str(v))

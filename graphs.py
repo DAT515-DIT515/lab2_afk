@@ -4,6 +4,7 @@ class Graph(nx.Graph):
     
     def __init__(self, start=None, values = None, directed=False):
         super().__init__(start)
+        
         self._adjlist = {}
         if values is None:
             values = {}
@@ -14,30 +15,56 @@ class Graph(nx.Graph):
         # such as a list of edges
         # here are some of the public methods to implement
         
-        
+    def __len__(self):
+         return self.number_of_nodes()
+     
     def vertices(self):
-        pass
-    
+         return self.nodes()
+
     def edges(self):
-         pass
-    def neighbours(self,v):
-         pass
+         return self.edges()
+    
+     
+    def neighbors(self, n):
+         return self.neighbors(n)
+
     def add_edge(self,a,b):
-         pass
+         return self.add_edge(a,b)
+    
+    
     def add_vertex(self,a):
-         pass
+         return self.add_node(a)
+    
+    
+    
+    
     def is_directed(self):
          pass
+    
     def get_vertex_value(self, v):
          pass
+    
     def set_vertex_value(self, v, x):
          pass
+    
+
+    def remove_edge(self,u, v):
+         return self.remove_edge(u, v)
+    
+    
+    def remove_vertices(self,n):
+         return self.remove_node(n)
+    
 
 
 class WeightedGraph(Graph):
-
+    def __init__(self, start=None):
+         super().__init__(start)
+         self.weights = {}
+    
     def set_weight(self, a, b, w):
          pass
+    
     def get_weight(self, a, b):
         pass
     	# etc etc
